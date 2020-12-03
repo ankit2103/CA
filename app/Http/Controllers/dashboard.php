@@ -155,6 +155,7 @@ class dashboard extends Controller
         $data = blog::find($id);
         $image_path = public_path().'/blogs/'.$data->image;
         unlink($image_path);
+         DB::delete('delete from blog where id = ?',[$id]);
     	return redirect()->back();
     }
     public function newsletter_delete($id) {

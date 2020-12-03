@@ -60,7 +60,7 @@ Route::post('/edit_news/{id}','dashboard@edit_news');//Edit Blog
 
 
 //Delete
-Route::get('/delete_client/{id}','dashboard@client_delete');//Delete Blog
+Route::get('/delete_client/{id}','dashboard@client_delete');//Delete Client
 Route::get('/delete_blog/{id}','dashboard@blog_delete');//Delete Blog
 Route::get('/delete_newsletter/{id}','dashboard@newsletter_delete');//Delete NewsLetter
 Route::get('/delete_feedback/{id}','dashboard@delete_feedback');//Delete feedback
